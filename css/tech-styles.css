@@ -1,0 +1,538 @@
+/* ============================================
+   2025 TECH UPDATES - ADDITIONAL STYLES
+   ============================================ */
+
+/* Tech Hero Section */
+.tech-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 2rem 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-hero-content {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.tech-hero-title {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    line-height: 1.1;
+}
+
+.tech-year {
+    font-size: 5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 3s ease infinite;
+    background-size: 200% 200%;
+}
+
+.tech-headline {
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 30px rgba(102, 126, 234, 0.5);
+}
+
+.tech-hero-subtitle {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 1rem 0 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.tech-hero-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+}
+
+/* Tech Hero CTA Buttons - Horizontal Left-Aligned */
+.tech-hero .cta-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tech-hero-image {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+}
+
+.tech-hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 24px;
+    transition: transform 0.5s ease;
+}
+
+.tech-hero-image:hover img {
+    transform: scale(1.05);
+}
+
+.image-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(102, 126, 234, 0.2), transparent 70%);
+    pointer-events: none;
+}
+
+/* Tech Stats Section */
+.tech-stats-section {
+    padding: 60px 2rem;
+    background: rgba(102, 126, 234, 0.05);
+    border-top: 1px solid rgba(102, 126, 234, 0.1);
+    border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+/* Tech Update Section */
+.tech-update-section {
+    padding: 100px 2rem;
+    position: relative;
+}
+
+.tech-update-section.alt-bg {
+    background: rgba(102, 126, 234, 0.03);
+}
+
+.tech-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.tech-content-grid.reverse {
+    direction: rtl;
+}
+
+.tech-content-grid.reverse>* {
+    direction: ltr;
+}
+
+.tech-image-container {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.tech-feature-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 24px;
+    transition: transform 0.5s ease;
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+}
+
+.tech-image-container:hover .tech-feature-img {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tech-image-container:hover .image-overlay {
+    opacity: 1;
+}
+
+.tech-details {
+    padding: 2rem;
+}
+
+.tech-category-title {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.tech-update-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tech-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(102, 126, 234, 0.3);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.tech-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+    filter: drop-shadow(0 0 10px rgba(102, 126, 234, 0.5));
+}
+
+.tech-content h4 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.tech-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Tech Timeline */
+.tech-timeline {
+    max-width: 900px;
+    margin: 3rem auto 0;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.tech-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg,
+            rgba(102, 126, 234, 0) 0%,
+            rgba(102, 126, 234, 0.5) 20%,
+            rgba(102, 126, 234, 0.5) 80%,
+            rgba(102, 126, 234, 0) 100%);
+}
+
+/* Future Section */
+.tech-future-section {
+    padding: 100px 2rem;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+}
+
+.future-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.future-card {
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.future-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+}
+
+.future-card:hover::before {
+    transform: translateX(0);
+}
+
+.future-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(102, 126, 234, 0.3);
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+}
+
+.future-number {
+    font-size: 3rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.future-card h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.future-card p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+}
+
+/* CTA Section */
+.tech-cta-section {
+    padding: 100px 2rem;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(118, 75, 162, 0.15));
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2.5rem;
+}
+
+/* Animations */
+@keyframes gradientShift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .tech-hero-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .tech-hero-title {
+        align-items: center;
+    }
+
+    .tech-year {
+        font-size: 4rem;
+    }
+
+    .tech-headline {
+        font-size: 2.5rem;
+    }
+
+    .tech-content-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .tech-content-grid.reverse {
+        direction: ltr;
+    }
+
+    .future-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .tech-hero {
+        padding: 100px 1.5rem 60px;
+    }
+
+    .tech-hero-title {
+        font-size: 3rem;
+    }
+
+    .tech-year {
+        font-size: 3.5rem;
+    }
+
+    .tech-headline {
+        font-size: 2rem;
+    }
+
+    .tech-hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .tech-update-section {
+        padding: 60px 1.5rem;
+    }
+
+    .tech-category-title {
+        font-size: 1.5rem;
+    }
+
+    .tech-item {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.2rem;
+    }
+
+    .tech-icon {
+        font-size: 2rem;
+    }
+
+    .tech-content h4 {
+        font-size: 1.1rem;
+    }
+
+    .tech-content p {
+        font-size: 0.95rem;
+    }
+
+    .future-card {
+        padding: 2rem;
+    }
+
+    .future-number {
+        font-size: 2.5rem;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-year {
+        font-size: 2.5rem;
+    }
+
+    .tech-headline {
+        font-size: 1.5rem;
+    }
+
+    .tech-hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .tech-hero-description {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .future-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-stats-section .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+
+    .navbar,
+    .back-to-top,
+    .watermark,
+    .particles,
+    #fireworks,
+    .cta-buttons {
+        display: none;
+    }
+
+    .tech-hero,
+    .tech-update-section {
+        page-break-inside: avoid;
+    }
+}
+
+/* Accessibility Enhancements */
+@media (prefers-reduced-motion: reduce) {
+
+    .tech-feature-img,
+    .future-card,
+    .tech-item {
+        transition: none;
+    }
+
+    .tech-hero-image img {
+        transition: none;
+    }
+
+    @keyframes gradientShift {
+
+        0%,
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+
+    .tech-item,
+    .future-card {
+        border-width: 2px;
+        border-color: #fff;
+    }
+
+    .tech-content h4,
+    .future-card h3 {
+        color: #fff;
+    }
+}

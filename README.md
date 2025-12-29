@@ -1,372 +1,249 @@
-# 🎉 New Year 2026 - Welcome to 2026!
+# 🎉 New Year 2026 - Interactive Web Experience
 
-[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](CHANGELOG.md)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-production-success.svg)]()
+A stunning, feature-rich web application celebrating the arrival of 2026 with fortune telling, technology updates, and interactive New Year experiences.
 
-> A premium, interactive New Year celebration web application with enterprise-level security and modern modular architecture.
+## ✨ Project Overview
 
-**Live Demo**: [wishto2026](https://srijan-xi.github.io/wishto2026/)  
-**Repository**: [wishto2026](https://github.com/Srijan-XI/wishto2026)
-
----
-
-## 📋 Project Overview
-
-**New Year 2026** is a feature-rich, secure web application that combines stunning visual effects with interactive features to celebrate the arrival of 2026. Built with modern web technologies and following best practices for security, accessibility, and performance.
-
-### 🌟 Highlights
-
-- **🔒 Enterprise Security**: Comprehensive XSS protection and input sanitization
-- **📦 Modular Architecture**: Clean ES6 modules for maintainability
-- **🎨 Premium Design**: Glassmorphism with vibrant gradients
-- **📱 Mobile-First**: Optimized for all devices with touch support
-- **♿ Accessible**: WCAG compliant with ARIA support
-- **⚡ Performant**: 60fps animations with optimized rendering
-
----
+This project is a comprehensive New Year celebration website featuring:
+- **Main Landing Page** - Countdown, wishes, resolutions, and celebrations
+- **Fortune Teller Page** - Personalized 2026 predictions with zodiac insights
+- **2025 Tech Updates** - A comprehensive review of technology breakthroughs
 
 ## 📁 Project Structure
 
 ```
 New_Year/
-├── index.html              # Main HTML page
-├── styles.css              # Complete styling (44KB)
-├── script.js               # Main application (ES6 modules)
-│
-├── js/                     # Modular JavaScript
-│   ├── utils.js           # Security & utilities (6.5KB)
-│   ├── animations.js      # Visual effects (10.4KB)
-│   ├── countdown.js       # Timers & counters (4.8KB)
-│   └── interactions.js    # User interactions (14KB)
-│
-├── docs/                   # Documentation
-│   ├── MODULES.md         # Module reference
-│   └── IMPLEMENTATION-SUMMARY.md
-│
-├── README.md              # Project overview (this file)
-├── CHANGELOG.md           # Version history
-├── SECURITY.md            # Security guide
-└── LICENSE                # MIT License
+├── index.html                 # Main landing page
+├── README.md                  # This file
+├── CHANGELOG.md              # Version history and changes
+├── /css/                     # All stylesheets
+│   ├── styles.css           # Main styling
+│   ├── enhanced-styles.css  # Enhanced features styling
+│   ├── fortune-styles.css   # Fortune page styling
+│   ├── fortune-footer.css   # Fortune page footer
+│   └── tech-styles.css      # 2025 Tech page styling
+├── /js/                      # JavaScript modules
+│   ├── script.js            # Main application
+│   ├── animations.js        # Particle & fireworks animations
+│   ├── countdown.js         # Countdown timer logic
+│   ├── interactions.js      # User interactions
+│   ├── utils.js             # Utility functions
+│   ├── enhanced-features.js # Mobile menu, theme, music
+│   └── fortune.js           # Fortune teller logic
+├── /pages/                   # Additional HTML pages
+│   ├── fortune.html         # Fortune Teller page
+│   └── 2025.html            # 2025 Tech Updates page
+├── /images/                  # Image assets
+│   ├── fortune_2026_logo.png
+│   ├── tech_2025_hero_*.png
+│   ├── ai_advancement_*.png
+│   ├── quantum_computing_*.png
+│   └── ... (other images)
+└── /favicon/                 # Favicon assets
+    └── favicon.png
 ```
 
----
+## 🚀 Features
 
-## ✨ Features
+### Main Page (index.html)
+- **Live Countdown** - Real-time countdown to New Year 2026
+- **Interactive Wishes** - Submit and save wishes with localStorage
+- **Resolution Tracker** - Track progress with interactive cards (+10% on click)
+- **Random Resolution Generator** - Get inspired with 20 random ideas
+- **Memory Gallery** - Beautiful image showcase
+- **Quote Carousel** - Inspiring quotes for the new year
+- **Mobile Menu** - Responsive hamburger navigation
+- **Theme Toggle** - Dark/Light mode (localStorage persistence)
+- **Music Control** - Background music with on/off toggle
+- **Confetti Celebrations** - Animated celebrations on interactions
 
-### Core Features
-- ⏰ **Real-time Countdown** - Live countdown to January 1, 2026
-- 🎆 **Interactive Fireworks** - Canvas-based fireworks animation
-- �🎯 **Resolution Tracker** - Track 6 goal categories with progress
-- 💌 **Wishes System** - Submit and display New Year wishes
-- 💬 **Quotes Carousel** - Auto-rotating inspirational quotes
-- 📅 **Memories Gallery** - 2025 year in review
-- 📊 **Timeline 2026** - Year milestones visualization
-- 📞 **Contact Form** - Validated contact form
-- ⬆️ **Back to Top** - Smooth scroll to top button
+### Fortune Teller Page (fortune.html)
+- **Personalized Fortunes** - Based on name and birth month
+- **Lucky Elements** - Color, number, day predictions
+- **Monthly Energy Forecast** - 12-month energy predictions
+- **Zodiac Predictions** - Complete predictions for all 12 signs
+- **World New Year Map** - Global celebration times (World Time API)
+- **Focus Areas** - Key areas to focus on in 2026
+- **Strategic Advice** - Personalized guidance
 
-### Design Features
-- ✨ Premium glassmorphism UI
-- 🎨 Vibrant gradient color palette
-- 🌊 Smooth CSS animations
-- ⚡ Particle background system
-- 🎭 Floating celebration elements
-- 📱 Fully responsive design
+### 2025 Tech Updates Page (2025.html)
+- **Hero Section** - Stunning tech hero with animations
+- **AI & Machine Learning** - GPT-5, Generative AI, Healthcare AI
+- **Quantum Computing** - 1000-qubit processors, Quantum internet
+- **5G/6G Connectivity** - Network evolution and IoT
+- **VR/AR/Metaverse** - Extended reality advances
+- **Green Technology** - Sustainable tech innovations
+- **Future Predictions** - Looking ahead to 2026
+- **Animated Stats** - Counter animations on scroll
+- **Interactive Timeline** - Other major breakthroughs
+- **Confetti Celebrations** - Launch animation button
 
-### Technical Features
-- 🔒 **Comprehensive Input Sanitization**
-- 🛡️ **XSS Protection** (6 security functions)
-- ✅ **Form Validation** with length constraints
-- 📳 **Haptic Feedback** for mobile devices
-- ♿ **ARIA Compliance** for accessibility
-- 💾 **LocalStorage Ready** for data persistence
+## 🎨 Design Features
 
-## 🎨 Features by Module
+- **Glassmorphism** - Modern glass-blur effects
+- **Gradient Animations** - Dynamic color transitions
+- **Smooth Scrolling** - Elegant page navigation
+- **Particle Effects** - Floating background particles
+- **Responsive Design** - Mobile, tablet, and desktop optimized
+- **Custom Fonts** - Google Fonts (Outfit, Playfair Display)
+- **Dark Theme** - Eye-friendly color scheme
 
-<table>
-<tr>
-<td width="50%">
+## 🛠️ Technologies Used
 
-### 🔧 utils.js
-- Debounce function
-- Input sanitization
-- Smooth scrolling
-- Touch feedback
-- Local storage
-- Haptic feedback
-- Event tracking
+- **HTML5** - Semantic markup
+- **CSS3** - Advanced styling, animations, grid, flexbox
+- **JavaScript (ES6+)** - Modules, async/await, modern syntax
+- **LocalStorage API** - Save wishes, resolutions, preferences
+- **World Time API** - Accurate global timezone data
+- **Canvas Confetti** - Celebration animations (CDN)
+- **IntersectionObserver** - Scroll-triggered animations
 
-</td>
-<td width="50%">
+## 📦 Installation & Usage
 
-### ✨ animations.js
-- Particle system (50 particles)
-- Fireworks canvas
-- Confetti bursts
-- Celebration effects
-- Resolution animations
+### Local Development
 
-</td>
-</tr>
-<tr>
-<td width="50%">
+1. **Clone or Download** the repository
+2. **Open the project folder**
+3. **Launch index.html** in your browser
+   - Double-click `index.html`, or
+   - Use Live Server extension in VS Code
 
-### ⏰ countdown.js
-- New Year countdown
-- Year progress bar
-- Animated counters
-- Statistics display
+### File Protocol Note
+All JavaScript modules work with the `file://` protocol. No server required!
 
-</td>
-<td width="50%">
+### CDN Dependencies
+- Canvas Confetti: Automatically loaded from CDN
+- Google Fonts: Loaded via CDN
 
-### 🎮 interactions.js
-- Wishes submission
-- Resolution tracker (6 categories)
-- Quotes carousel (4 quotes + swipe)
-- Contact form validation
-- Back to top button
+## 🎯 Key Functionalities
 
-</td>
-</tr>
-</table>
-
----
-
-## 🔒 Security Features
-
-### Input Sanitization Functions
-
-| Function | Purpose | Protection |
-|----------|---------|------------|
-| `sanitizeInput()` | XSS prevention | Script tags, event handlers, protocols |
-| `sanitizeHTML()` | Safe HTML rendering | Whitelist-based tag filtering |
-| `sanitizeEmail()` | Email validation | Format, length, encoding |
-| `sanitizeURL()` | URL validation | Protocol whitelisting |
-| `escapeHTML()` | Entity encoding | HTML special characters |
-| `validateLength()` | DoS prevention | Min/max constraints |
-
-### Validation Rules
-
+### Fortune Generator
 ```javascript
-Wishes:  3-200 characters, XSS sanitized
-Name:    2-50 characters, letters/spaces/hyphens only
-Email:   5-100 characters, RFC-compliant format
-Message: 10-1000 characters, fully sanitized
+// Generates personalized fortune based on:
+- Name (hashed for randomization)
+- Birth month (zodiac influence)
+- Current timestamp
+- Monthly energy predictions
 ```
 
-**See [SECURITY.md](SECURITY.md) for complete security documentation.**
-
----
-
-## 🛠️ Technology Stack
-
-### Frontend
-| Technology | Usage |
-|------------|-------|
-| **HTML5** | Semantic markup |
-| **CSS3** | Glassmorphism, Grid, Flexbox, Animations |
-| **JavaScript ES6+** | Modular architecture |
-
-### APIs & Libraries
-- **Canvas API** - Fireworks rendering
-- **Intersection Observer** - Scroll-triggered animations
-- **Vibration API** - Haptic feedback
-- **LocalStorage API** - Data persistence (ready)
-
-### Design
-- **Google Fonts** - Outfit & Playfair Display
-- **SVG Icons** - Inline vector graphics
-- **CSS Variables** - Dynamic theming
-- **Gradients** - Purple, pink, blue, gold palette
-
----
-
-## 🗺️ Module Architecture
-
-```
-┌─────────────────────┐
-│   script.js         │  ← Main Entry Point
-└──────────┬──────────┘
-           │
-           ├─────────────────────────┐
-           │                         │
-           ▼                         ▼
-    ┌──────────────┐         ┌──────────────┐
-    │ animations   │◄────────│  countdown   │
-    │    .js       │         │    .js       │
-    └──────┬───────┘         └──────┬───────┘
-           │                        │
-           │    ┌──────────────┐    │
-           └───►│interactions  │◄───┘
-                │    .js       │
-                └──────┬───────┘
-                       │
-                       ▼
-                ┌──────────────┐
-                │   utils      │
-                │    .js       │
-                └──────────────┘
+### Stats Counter Animation
+```javascript
+// Animates number from 0 to target
+- Uses requestAnimationFrame
+- Triggered by IntersectionObserver
+- Smooth counting effect
 ```
 
-### Module Responsibilities
-
-**utils.js** - Security, helpers, utilities  
-**animations.js** - Particles, fireworks, confetti  
-**countdown.js** - Timers, progress tracking  
-**interactions.js** - User inputs, forms, UI logic  
-
----
-
-## 🚀 Quick Start
-
-### 1. Clone Repository
-```bash
-git clone https://github.com/Srijan-XI/wishto2026.git
-cd wishto2026
+### World Clock Updates
+```javascript
+// Real-time timezone tracking
+- Fetches from World Time API
+- Client-side calculation fallback
+- Updates every second
+- Celebration status indicators
 ```
 
-### 2. Run Locally
-```bash
-# Option 1: Simple HTTP server
-npx serve
+## 📱 Responsive Breakpoints
 
-# Option 2: Python server
-python -m http.server 8000
+- **Desktop**: > 1024px
+- **Tablet**: 768px - 1024px
+- **Mobile**: < 768px
+- **Small Mobile**: < 480px
 
-# Option 3: VS Code Live Server
-# Just right-click index.html and select "Open with Live Server"
-```
+## 🎁 Special Features
 
-### 3. Open in Browser
-```
-http://localhost:5000
-# or your server's port
-```
+### LocalStorage Persistence
+- Wishes and resolutions saved permanently
+- Theme preference (dark/light)
+- Music preference (on/off)
+- Delete functionality for wishes
 
-**Note**: A local server is required for ES6 modules to work properly.
+### Accessibility
+- Semantic HTML5 elements
+- ARIA labels where needed
+- Keyboard navigation support
+- Reduced motion support
+- High contrast mode support
 
----
+### Performance
+- Optimized animations (60 FPS)
+- Lazy loading for images
+- Debounced scroll events
+- RequestAnimationFrame for smooth updates
+- Intersection Observer for efficient DOM watching
 
-## 📱 Responsive Design
+## 🌐 Browser Support
 
-### Breakpoints
-```css
-Mobile:    max-width: 480px   (Phones)
-Tablet:    max-width: 768px   (Tablets)
-Desktop:   min-width: 1024px  (Desktops)
-Landscape: max-height: 600px  (Landscape orientation)
-```
-
-### Mobile Optimizations
-- ✅ Touch-optimized buttons (min 48px)
-- ✅ Swipe gestures for carousel
-- ✅ Reduced particle count (50 → 25)
-- ✅ Haptic feedback
-- ✅ Auto-scroll to focused inputs
-- ✅ Prevent zoom on inputs (font-size: 16px)
-
----
+- ✅ Chrome (recommended)
+- ✅ Firefox
+- ✅ Safari
+- ✅ Edge
+- ✅ Opera
 
 ## 🎨 Color Palette
 
 ```css
-Primary:    #667eea → #764ba2  (Purple gradient)
-Secondary:  #f093fb → #f5576c  (Pink gradient)
-Accent:     #4facfe → #00f2fe  (Blue gradient)
-Gold:       #f6d365 → #fda085  (Orange gradient)
-Background: #0a0a0f            (Dark theme)
+--primary-color: #667eea (Purple)
+--secondary-color: #f5576c (Pink)
+--accent-color: #00f2fe (Cyan)
+--gold-color: #f6d365 (Gold)
+--bg-dark: #0a0a0f (Dark Blue-Black)
 ```
 
----
+## 🔧 Customization
 
-## 🧪 Testing
+### Update Colors
+Edit CSS variables in `css/styles.css`:
+```css
+:root {
+    --primary-color: #yourColor;
+    --secondary-color: #yourColor;
+}
+```
 
-### Functionality Checklist
-- ✅ Page loads without errors
-- ✅ Countdown updates every second
-- ✅ Wishes can be submitted
-- ✅ Resolutions update progress
-- ✅ Quotes carousel auto-rotates
-- ✅ Contact form validates inputs
-- ✅ Fireworks launch on button click
-- ✅ Back to top button appears on scroll
+### Add New Fortunes
+Edit `js/fortune.js` - add to prediction arrays
 
-### Security Checklist
-- ✅ XSS attempts are blocked
-- ✅ Script tags are removed
-- ✅ Event handlers are stripped
-- ✅ URL protocols are validated
-- ✅ Length limits are enforced
-- ✅ Email format is checked
-
----
-
-## 📚 Documentation
-
-| Document | Description |
-|----------|-------------|
-| [README.md](README.md) | Project overview (this file) |
-| [CHANGELOG.md](CHANGELOG.md) | Version history & changes |
-| [SECURITY.md](SECURITY.md) | Security implementation guide |
-| [docs/MODULES.md](docs/MODULES.md) | Module API reference |
-| [docs/IMPLEMENTATION-SUMMARY.md](docs/IMPLEMENTATION-SUMMARY.md) | Implementation details |
-
----
-
-## 🎓 Learning Resources
-
-- [ES6 Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) - JavaScript modules
-- [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) - Drawing graphics
-- [Intersection Observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) - Scroll animations
-- [OWASP XSS Prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html) - Security guide
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
+### Modify Countdown Target
+Edit `js/countdown.js` - change target date
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
+This project is open source and available for personal and educational use.
 
 ## 👨‍💻 Author
 
-**srijan-xi**  
-Portfolio: [srijanxi.netlify.app](https://srijanxi.netlify.app/)  
-GitHub: [@Srijan-XI](https://github.com/Srijan-XI)
+**srijan-xi**
+- Website: [https://srijanxi.netlify.app/](https://srijanxi.netlify.app/)
+- Created with ❤️ and ✨
 
----
+## 🎉 Version
+
+**Version 2.0.0** - December 30, 2025
+
+## 📝 Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
 
 ## 🙏 Acknowledgments
 
-- Google Fonts for Outfit & Playfair Display
-- MDN Web Docs for excellent documentation
-- OWASP for security best practices
-- The open-source community
+- Canvas Confetti library by [catdad](https://github.com/catdad/canvas-confetti)
+- Google Fonts for typography
+- World Time API for accurate timezone data
+- AI-generated images for 2025 Tech page
+
+## � Getting Started
+
+1. Open `index.html` in your browser
+2. Explore the main page features
+3. Click "🔮 Fortune" to get your 2026 prediction
+4. Click "🚀 2025 Tech" to review technology updates
+5. Submit wishes and resolutions
+6. Toggle theme and music as desired
+7. Enjoy the New Year celebration! 🎊
 
 ---
 
-## 📊 Project Stats
+**Made with ❤️ for celebrating the amazing year 2026!** ✨🎉
 
-![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)
-![Files](https://img.shields.io/badge/files-10-green.svg)
-![Lines of Code](https://img.shields.io/badge/lines-4000+-orange.svg)
-![Security](https://img.shields.io/badge/security-5%2F5-success.svg)
-
----
-
-**Created with ❤️ and ✨ by [srijan-xi](https://srijanxi.netlify.app/)**  
-**Happy New Year 2026! 🎉**
-
+*May your year be filled with joy, success, and endless possibilities!*

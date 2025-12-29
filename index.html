@@ -23,7 +23,8 @@
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Playfair+Display:wght@700;900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/enhanced-styles.css">
 </head>
 
 <body>
@@ -39,17 +40,42 @@
                 <span class="logo-icon">✨</span>
                 <span class="logo-text">New Year 2026</span>
             </div>
-            <div class="nav-links">
+
+            <!-- Mobile Hamburger -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="navLinks">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#countdown" class="nav-link">Countdown</a>
                 <a href="#resolutions" class="nav-link">Resolutions</a>
                 <a href="#memories" class="nav-link">Memories</a>
                 <a href="#quotes" class="nav-link">Quotes</a>
-                <a href="2025.html" class="nav-link">🚀 2025 Tech</a>
+                <a href="pages/fortune.html" class="nav-link">🔮 Fortune</a>
+                <a href="pages/2025.html" class="nav-link">🚀 2025 Tech</a>
                 <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-controls">
+                <button class="control-btn music-toggle" id="musicToggle" aria-label="Toggle music"
+                    title="Toggle Music">
+                    <span class="music-icon">🔇</span>
+                </button>
+                <button class="control-btn theme-toggle" id="themeToggle" aria-label="Toggle theme"
+                    title="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
             </div>
         </div>
     </nav>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-happy-new-year-387.mp3" type="audio/mpeg">
+    </audio>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -235,6 +261,9 @@
             <div class="section-header">
                 <h2 class="section-title">2026 Resolutions</h2>
                 <p class="section-subtitle">Set your goals and track your progress</p>
+                <button class="btn btn-secondary random-resolution-btn" onclick="generateRandomResolution()">
+                    <span>🎲 Get Random Resolution Idea</span>
+                </button>
             </div>
 
             <div class="resolutions-grid">
@@ -585,7 +614,8 @@
     </footer>
 
     <!-- JavaScript Modules -->
-    <script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script type="module" src="js/script.js"></script>
 </body>
 
 </html>
