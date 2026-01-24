@@ -221,7 +221,7 @@ export function stopFireworks() {
  */
 export function launchAutoFireworks() {
     launchFireworks();
-    setTimeout(stopFireworks, 30000); // Stop after 30 seconds
+    setTimeout(stopFireworks, 5000); // Stop after 5 seconds
 }
 
 /**
